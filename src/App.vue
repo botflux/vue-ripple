@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <base-button>
+      Click me
+    </base-button>
+
+    <round-button>
+      Click me
+    </round-button>
+
+    <floating-action-button>
+      <i class="material-icons">add</i>
+    </floating-action-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseButton from './components/BaseButton'
+import RoundButton from './components/RoundButton'
+import FloatingActionButton from './components/FloatingActionButton'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    BaseButton, RoundButton, FloatingActionButton
   }
 }
 </script>
